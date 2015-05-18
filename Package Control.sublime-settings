@@ -1,11 +1,31 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
+		"C++ Snippets",
 		"Codecs33",
 		"ConvertToUTF8",
-		"Git",
+		"Emmet",
+		"HTML Compressor",
 		"HTML-CSS-JS Prettify",
+		"Jedi - Python autocompletion",
 		"Markdown Preview",
-		"Mou Markdown App (OSX)"
+		"Package Control",
+		"Processing",
+		"Racket",
+		"SML (Standard ML)",
+		"Theme - Afterglow",
+		"Theme - Coffee",
+		"Theme - LP",
+		"Theme - Midnight",
+		"Theme - Night",
+		"Theme - Numix",
+		"Theme - Tech49",
+		"Tomorrow Color Schemes",
+		"Visual Studio Bold Color Scheme",
+		"Visual Studio Dark",
+		"WakaTime"
 	]
 }
