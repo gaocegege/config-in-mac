@@ -167,3 +167,10 @@ function tab-purple() { tab-color a789d4; }
 function tab-orange() { tab-color fbbc79; }
 function tab-white() { tab-color fff; }
 function tab-gray() { tab-color c3c3c3c; }
+
+# Java
+#for javac 在mac下乱码  
+alias javac='javac -J-Dfile.encoding=UTF-8 -encoding UTF-8 '  
+alias java='java -Dfile.encoding=UTF-8 '  
+export LANG=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
