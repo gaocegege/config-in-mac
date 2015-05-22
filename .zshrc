@@ -174,3 +174,6 @@ alias javac='javac -J-Dfile.encoding=UTF-8 -encoding UTF-8 '
 alias java='java -Dfile.encoding=UTF-8 '  
 export LANG=en_US.UTF-8  
 export LC_ALL=en_US.UTF-8
+
+# filetree
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
