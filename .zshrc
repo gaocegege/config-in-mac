@@ -90,7 +90,7 @@ export PATH="/usr/local/Cellar/llvm/3.5.0/bin/:$PATH"
 export PATH="/usr/local/Cellar/git/2.3.0/bin:$PATH"
 
 #set python2.7 as default
-alias py=python
+alias py="/usr/bin/python"
 PYTHONPATH="${PYTHONPATH}:/Library/Python/2.7/site-packages/"
 export PYTHONPATH
 
