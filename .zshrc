@@ -5,7 +5,7 @@ export ZSH=/Users/gaoce/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gaoce"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
@@ -86,18 +86,26 @@ export PATH="/usr/local/Cellar/llvm/3.5.0/bin/:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 # export PATH=${PATH}:/opt/local/include
 
-#git 2
+# git 2
 export PATH="/usr/local/Cellar/git/2.3.0/bin:$PATH"
+
+# user bin
+export PATH="/Users/gaoce/bin:$PATH"
 
 #set python2.7 as default
 alias py="/usr/bin/python"
+alias py3="python3"
 PYTHONPATH="${PYTHONPATH}:/Library/Python/2.7/site-packages/"
 export PYTHONPATH
+
+# python3
+# export WORKON_HOME=~/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
 
 #set scala environment
 #export PATH="/Users/gaoce/Files/scala-2.11.5/bin:$PATH"
 # set to 2.10
-export PATH="/Users/gaoce/Programs/scala-2.10.5/bin:$PATH"
+# export PATH="/Users/gaoce/Programs/scala-2.10.5/bin:$PATH"
 
 # bbs
 alias contobbs="telnet bbs.sjtu.edu.cn"
@@ -105,10 +113,12 @@ alias contobbs="telnet bbs.sjtu.edu.cn"
 # Github
 alias gotogit="cd ~/Github"
 alias gotogitblog="cd ~/Github/Blog"
+alias gotocourse="cd ~/Documents/课程"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Go Path
 export GOPATH="/Users/gaoce/Projects/gopath"
+export PATH="$PATH:/Users/gaoce/Projects/gopath/bin"
 
 # Homebrew
 alias gobrew="cd /usr/local/Cellar/;ls"
@@ -177,3 +187,32 @@ export LC_ALL=en_US.UTF-8
 
 # filetree
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+
+# OPAM configuration
+. /Users/gaoce/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# spark
+export PATH="/Users/gaoce/Programs/spark-1.5.0/bin:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home"
+
+# Hadoop variables
+export HADOOP_INSTALL="/Users/gaoce/Files/Librarys/hadoop-2.6.1"
+export PATH="$PATH:$HADOOP_INSTALL/bin"
+export PATH="$PATH:$HADOOP_INSTALL/sbin"
+export HADOOP_MAPRED_HOME="$HADOOP_INSTALL"
+export HADOOP_COMMON_HOME="$HADOOP_INSTALL"
+export HADOOP_HDFS_HOME="$HADOOP_INSTALL"
+export YARN_HOME="$HADOOP_INSTALL"
+
+# elasticsearch
+export PATH="/Users/gaoce/Files/Librarys/elasticsearch-2.0.0/bin:$PATH"
+export JDBC_IMPORTER_HOME="/Users/gaoce/GitHub/zuims/src/zuims-restaurant-service/elasticsearch/elasticsearch-jdbc-2.0.0.0"
+
+# codacy
+export CODACY_PROJECT_TOKEN="158778164f094bb9a14dd83ffd2d5be1"
+
+# mysql
+export PATH="/usr/local/mysql-5.7.9-osx10.9-x86_64/bin:$PATH"
+
+# shadowsocks log
+alias copy-shadowsocks-log="scp httpproxy:/var/log/shadowsocks.log ~/"

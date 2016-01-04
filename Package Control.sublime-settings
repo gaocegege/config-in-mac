@@ -1,20 +1,27 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
+		"AutoPEP8",
 		"C++ Snippets",
 		"Codecs33",
 		"ConvertToUTF8",
+		"Dockerfile Syntax Highlighting",
 		"Emmet",
 		"HTML Compressor",
 		"HTML-CSS-JS Prettify",
+		"Javap",
 		"Jedi - Python autocompletion",
+		"LogView",
 		"Markdown Preview",
+		"orgmode",
 		"Package Control",
 		"Processing",
 		"Racket",
+		"ScalaFormat",
 		"SML (Standard ML)",
 		"Theme - Afterglow",
 		"Theme - Coffee",
